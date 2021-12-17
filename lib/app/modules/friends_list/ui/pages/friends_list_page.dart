@@ -2,6 +2,7 @@ import 'package:desafio_mobile/app/modules/friends_list/bloc/friends_list_bloc.d
 import 'package:desafio_mobile/app/modules/friends_list/models/friends_list_response.dart';
 import 'package:desafio_mobile/app/modules/friends_list/ui/widgets/friends_item_widget.dart';
 import 'package:desafio_mobile/app/modules/friends_list/ui/widgets/header_friends_list_widget.dart';
+import 'package:desafio_mobile/app/share/ui/widgets/error_message_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +39,7 @@ class _FriendsListPageState extends State<FriendsListPage> {
                 if (snapshot.hasData) {
                   return buildFriendsList(snapshot);
                 } else if (snapshot.hasError) {
-                  return Text(snapshot.error.toString());
+                  return MessageErrorWidget(icon: Icons.error_outline, text: "Ocorreu um erro inesperado",);
                 }
                 return const Center(child: CircularProgressIndicator());
               },

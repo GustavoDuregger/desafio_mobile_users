@@ -2,6 +2,7 @@
 import 'package:desafio_mobile/app/modules/user_profile/bloc/user_profile_bloc.dart';
 import 'package:desafio_mobile/app/modules/user_profile/models/user_profile_response.dart';
 import 'package:desafio_mobile/app/modules/user_profile/ui/widgets/user_profile_card_widget.dart';
+import 'package:desafio_mobile/app/share/ui/widgets/error_message_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                 if (snapshot.hasData) {
                   return buildUserProfileCard(snapshot);
                 } else if (snapshot.hasError) {
-                  return Text(snapshot.error.toString());
+                  return MessageErrorWidget(icon: Icons.error_outline, text: "Ocorreu um erro inesperado",);
                 }
                 return const Center(child: CircularProgressIndicator());
               },
