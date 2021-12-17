@@ -1,16 +1,23 @@
 # desafio_mobile
+App for list users
 
-A new Flutter application.
+## Run
+1. Clone the repository
+```bash
+https://github.com/GustavoDuregger/desafio_mobile_users.git
+```
+2. Enter the command in the project to download the dependencies
+```bash
+flutter pub get
+```
+3. Run main.dart
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Screenshot
+  <img src="https://github.com/GustavoDuregger/desafio_mobile_users/blob/development/assets/screenshots/Screenshot_splash.jpg" width="200">
+  <img src="https://github.com/GustavoDuregger/desafio_mobile_users/blob/development/assets/screenshots/Screenshot_perfil.jpg" width="200">
+  <img src="https://github.com/GustavoDuregger/desafio_mobile_users/blob/development/assets/screenshots/Screenshot_home.jpg" width="200">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architecture
+Structuring: Modular
+Pattern: BLoC
