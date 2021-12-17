@@ -1,15 +1,17 @@
+import 'package:desafio_mobile/app/share/ui/theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 Widget buildHeaderFriendsListPage() {
   return Container(
     height: 150,
-    decoration: const BoxDecoration(
+    decoration:  BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
           colors: [
-            Colors.lightBlueAccent,
-            Colors.blueAccent,
+            ColorsPalette.primaryColorAux,
+            ColorsPalette.primaryColor,
           ],
         ),
         borderRadius: BorderRadius.only(
@@ -24,7 +26,7 @@ Widget buildHeaderFriendsListPage() {
           ),
           const Spacer(),
           GestureDetector(
-            onTap: () {},
+            onTap: () => Modular.to.navigate('/user_profile'),
             child: const CircleAvatar(radius: 25, child: Icon(Icons.person)),
           ),
         ],
