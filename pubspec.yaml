@@ -11,17 +11,29 @@ dependencies:
   # UI
   cupertino_icons: ^1.0.2
   # Services
-  http: ^0.13.4
+  dio: ^4.0.4
   # Reactive stream
   rxdart: ^0.27.3
   # Architecture
   flutter_modular: ^4.3.0
-
+  # Test & validation
+  equatable: ^2.0.3
+  mocktail: ^0.2.0
+  dartz: ^0.10.1
+  # Database
+  moor_flutter: ^4.0.0
+  # State Management
+  flutter_bloc: ^7.0.0
+  # Dependency injection
+  provider: ^6.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  moor_generator: ^4.6.0+1
+  build_runner: ^2.1.4
+  modular_test: ^1.0.1+1
 
   flutter_native_splash: ^1.2.0
 
